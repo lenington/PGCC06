@@ -17,4 +17,4 @@ Gráfico: deveria ter feito mais rounds, as linhas estão se mexendo...
 ## Nota
 
 9/10
-9 pontos de 10 possíveis
+
