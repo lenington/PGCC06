@@ -10,9 +10,12 @@ Só é para enviar o código dos algoritmos! E não tudo...
 Código força bruta: ok
 Código com ordenação: 
    - não era para mudar o array! Ao invés de L.sort, era para utilizar sorted!!!  Isso afeta todo o experimento!
-Código com hash: Hash não é um bom nome para variável. Primeiro, porque começa com letra maiúscula e depois porque é o nome de uma Estrutura de Dados.
-Domínio: deveria ter utilizado um valor menor
-Gráfico: deveria ter feito mais rounds, as linhas estão se mexendo...
+
+   - Código com hash: Hash não é um bom nome para variável. Primeiro, porque começa com letra maiúscula e depois porque é o nome de uma Estrutura de Dados.
+
+   - Domínio: deveria ter utilizado um valor menor
+
+   - Gráfico: deveria ter feito mais rounds, as linhas estão se mexendo...
 
 ## Nota
 
