@@ -10,7 +10,6 @@ HeapSort: not in place de complexicade n log(n)
 """
 
 #Adaptado de: https://www.programiz.com/dsa/heap-sort
-
 def Heap(A, n, i):
   no_maior = i
   left = 2*i + 1
@@ -26,7 +25,7 @@ def Heap(A, n, i):
     A[i], A[no_maior] = A[no_maior], A[i]
     Heap(A, n, no_maior)
 
-def HeapSort_NotInPlace(A):
+def HeapSort_NotInPlace1(A):
   n = len(A)
   Q = A
 
@@ -39,8 +38,21 @@ def HeapSort_NotInPlace(A):
 
   return Q
 
-A = [4,3,7,5,9,8,7,8,5,4,1,3,7,8,8,4,10,1,10,10,10,10,0]
+import heapq as heap
 
+def HeapSort_NotInPlace(A):
+  if len(A) > 1:
+    Q = []
+    for e in A:
+      heap.heappush(Q,e)
+    for i in range(len(A)):
+      A[i] = heap.heappop(Q)
+    return A
+
+A = [4,3,7,5,9,8,7,0,0,2,2,9]
+print(HeapSort_NotInPlace1(A))
+
+A = [4,3,7,5,9,8,7,0,0,2,2,9]
 print(HeapSort_NotInPlace(A))
 
 """HeapSort: in place"""
@@ -114,8 +126,7 @@ def BucketSortAdaptado(A):
 
 def BucketSort(A):
   dominio = max(A) + 1
-  bucket = ['']*dominio #inicializa o bucket com o tamanho do dominio
-  #array_final = []*len(A)
+  bucket = ['']*dominio 
   
   for i in A:
     if bucket[i] == '':
@@ -123,7 +134,6 @@ def BucketSort(A):
     else:
       bucket[i] = bucket[i] + 1
   
-  #print("Bucket: ", bucket)
   A = []
   for i in range(len(bucket)):
     if bucket[i] != '':
@@ -231,7 +241,7 @@ def avg_time(domain, tam, func, rounds, debug = False):
   return sum/rounds
 
 #defines the algorithms to be processed
-algorithms = [MergeSort, QuickSort, HeapSort_NotInPlace, HeapSort_InPlace, BucketSort]
+algorithms = [MergeSort, QuickSort, HeapSort_NotInPlace1, HeapSort_InPlace, BucketSort]
 
 #defines the number of times each algorithm will be processed to find the average time
 num_rounds = 400
@@ -270,7 +280,7 @@ plt.rcParams['figure.figsize'] = [20, 10]
 g = sns.lineplot(x='Size', y='Time', hue='Algorithm', data=df)
 #g.set_yscale('log')
 #fig = plt.figure()
-plt.title("DOMAIN = 1000 \nnum_rounds = 400")
+plt.title("Gráfico 1\nDOMAIN = 1000, num_rounds = 400")
 g.set(xticks=[i for i in df.Size])
 plt.show()
 
@@ -294,7 +304,8 @@ sns.set(font_scale=1, style="ticks", rc={"lines.linewidth": 2})
 plt.rcParams['figure.figsize'] = [20, 10]
 
 g = sns.lineplot(x='Size', y='Time', hue='Algorithm', data=df)
-g.set_yscale('log')
+#g.set_yscale('log')
 #fig = plt.figure()
+plt.title("Gráfico 2\nDOMAIN = 1000, num_rounds = 400")
 g.set(xticks=[i for i in df.Size])
 plt.show()
