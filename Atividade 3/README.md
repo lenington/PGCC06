@@ -4,5 +4,20 @@ Implemente três algoritmos para realizar a ordenação de um array de elementos
 
 ## Comentários
 
+Merge: ok
+
+MergeSort: ok
+
+Lomuto: ok
+
+QuickSortLomuto: ok
+
+Hoare: ok
+
+QuickSortHoare: ok
+
+Gráfico: muito bom!
+
 ## Nota
 
+10/10
