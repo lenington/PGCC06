@@ -4,6 +4,11 @@ Implemente três algoritmos para realizar a ordenação de um array de elementos
 
 ## Comentários
 
+- HeapSort not in place: ok. O que usa a biblioteca do python está correto o outro não (ele também é in place). Sendo assim, eu vou descontar 1pt, por ter enviado um código errado. Você precisa saber o que está certo e que está errado!
+- HeapSort in Place: ok
+- BucketSort: ok
+- Gráfico: o primeiro gráfico está melhor que o primeiro. Dá próxima vez, você deve enviar só 1.
+
 ## Nota
 
--/10
+9/10
