@@ -4,7 +4,10 @@ Dado um grafo (Atividade5.ipynb em anexo), implemente os seguinte algoritmos: 1)
 
 ## Comentários
 
+- dfs: ok
+- bfs: ok
+- dijkstra: ok
 
 ## Nota
 
--/10
+10/10
