@@ -4,8 +4,11 @@ Dado um grafo (em anexo), implemente os seguintes algoritmos gulosos para obter 
 
 ## Comentários
 
+- Prim: ok
+- Kruskal: funciona apenas quando o vértice tem apenas 1 caractere (descontei 0.5).
+- Pseudocódigo: O de Prim, apesar de ter muitos detalhes, ficou bom. No de Kurskal, as linhas 9-13 tem o mesmo erro do código! Essa parte poderia ter ficado bem mais simples no pseudocódigo e sem o erro. (Dei 0.7 no pseudocódigo)
 
 
 ## Nota
 
---/10
+10,2/10
