@@ -17,9 +17,9 @@ Análise e Projeto de Algoritmos é uma disciplina obrigatória do curso de Pós
 
 ### Unidade III
 
-- [x] Atividade 1
-- [x] Atividade 2
-- [ ] Atividade 3
+- [x] [Atividade 1](https://github.com/lenington/PGCC06/tree/master/Atividade%206)
+- [x] [Atividade 2](https://github.com/lenington/PGCC06/tree/master/Atividade%207)
+- [ ] [Atividade 3](https://github.com/lenington/PGCC06/tree/master/Atividade%208)
 
 ## Notas
 
